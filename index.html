@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="file/favicon-16x16.png" type="image/png">
     <title>Ignatius Global School</title>
@@ -28,7 +28,7 @@
             align-items: center;
         }
 
-        header .text-container {
+        header.text-container {
             display: flex;
             flex-direction: column;
             margin-left: 10px;
@@ -88,6 +88,44 @@
             font-size: 16.8px;
             color: white;
             font-family: "Poppins", Arial, Helvetica, sans-serif;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #0197A7;
+            width: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 37.5px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            font-family: "Poppins", Arial, Helvetica, sans-serif;
+            font-size: 13.3px;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .dropdown-content i {
+            color: white;
+            font-size: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #fbbc05;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         div.sectionContainer {
@@ -157,7 +195,7 @@
 </head>
 <body>
     <header>
-        <img src="https://ignatiusglobal.sch.id/media_library/images/09666a0849a5cc9a158cf4077a779ea9.png" width="70px" height="70px" alt="">
+        <img src="https://ignatiusglobal.sch.id/media_library/images/09666a0849a5cc9a158cf4077a779ea9.png" width="70px" height="70px" alt="Logo">
         <div class="text-container">
             <h1>IGNATIUS GLOBAL SCHOOL</h1>
             <p>The first choice to the best future</p>
@@ -172,9 +210,42 @@
     <nav>
         <a href="">BERANDA</a>
         <a href="https://ignatiusglobal.sch.id/read/2/profil">PROFIL</a>
-        <a href="">DIREKTORI</a>
-        <a href="">PPDB 2021 / 2022</a>
-        <a href="">GALERI</a>
+        
+        <div class="dropdown">
+            <a href="#" class="dropbtn">DIREKTORI
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">PENDAFTARAN ALUMNI</a>
+                <a href="#">DIREKTORI ALUMNI</a>
+                <a href="#">DIREKTORI GURU DAN TENAGA KEPENDIDIKAN</a>
+                <a href="#">DIREKTORI PESERTA DIDIK</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#" class="dropbtn">PPDB 2021 / 2022
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">DAFTAR SEKARANG TA 2021/2022</a>
+                <a href="#">CETAK FORMULIR PENDAFTARAN</a>
+                <a href="#">CETAK KARTU UJIAN SELEKSI PPDB</a>
+                <a href="#">DOWNLOAD FORMULIR PENDAFTARAN PPDB</a>
+                <a href="#">HASIL SELEKSI PPDB</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#" class="dropbtn">GALERI
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">GALERI FOTO</a>
+                <a href="#">GALERI VIDEO</a>
+            </div>
+        </div>
+
         <a href="https://ignatiusglobal.sch.id/read/2/profil">PROFIL</a>
         <a href="https://belajar-online.ignatiusglobal.sch.id/login">E-LEARNING</a>
         <a href="https://ignatiusglobal.sch.id/read/42/jlpt-test">JLPT TEST</a>
