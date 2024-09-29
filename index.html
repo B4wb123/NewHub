@@ -95,6 +95,11 @@
             display: inline-block;
         }
 
+        .dropbtn {
+            background-color: transparent;
+            padding: 13px 0;
+        }
+
         .dropdown-content {
             display: none;
             position: absolute;
@@ -115,6 +120,54 @@
         }
 
         .dropdown-content a:hover {
+            background-color: #fbbc05;
+        }
+
+        
+        .dropdown-content.two {
+            display: none;
+            position: absolute;
+            background-color: #0197A7;
+            min-width: 130px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 37.5px;
+        }
+
+        .dropdown-content.two a {
+            color: white;
+            font-family: "Poppins", Arial, Helvetica, sans-serif;
+            font-size: 13.3px;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content.two a:hover {
+            background-color: #fbbc05;
+        }
+
+        
+        .dropdown-content.to {
+            display: none;
+            position: absolute;
+            background-color: #0197A7;
+            min-width: 319px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 37.5px;
+        }
+
+        .dropdown-content.to a {
+            color: white;
+            font-family: "Poppins", Arial, Helvetica, sans-serif;
+            font-size: 13.3px;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content.to a:hover {
             background-color: #fbbc05;
         }
 
@@ -221,7 +274,7 @@
             <a href="#" class="dropbtn">PPDB 2021 / 2022
                 <i class="fa-solid fa-caret-down"></i>
             </a>
-            <div class="dropdown-content">
+            <div class="dropdown-content to">
                 <a href="#">DAFTAR SEKARANG TA 2021/2022</a>
                 <a href="#">CETAK FORMULIR PENDAFTARAN</a>
                 <a href="#">CETAK KARTU UJIAN SELEKSI PPDB</a>
@@ -234,7 +287,7 @@
             <a href="#" class="dropbtn">GALERI
                 <i class="fa-solid fa-caret-down"></i>
             </a>
-            <div class="dropdown-content">
+            <div class="dropdown-content two">
                 <a href="#">GALERI FOTO</a>
                 <a href="#">GALERI VIDEO</a>
             </div>
